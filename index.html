@@ -3,94 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TempleSpiritHub</title>
+    <title>My Stylish Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to TempleSpiritHub</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section id="home" class="section-bg">
-        <h2>Home</h2>
-        <p>Your ultimate destination for spiritual guidance, sacred services, and divine blessings.</p>
+    <!-- Background Slider -->
+    <div id="slider">
+        <div class="slide active">
+            <img src="https://via.placeholder.com/1500x800/FF5733/fff?text=Slide+1" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="https://via.placeholder.com/1500x800/33CFFF/fff?text=Slide+2" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="https://via.placeholder.com/1500x800/75FF33/fff?text=Slide+3" alt="Slide 3">
+        </div>
+    </div>
+
+    <!-- Content Blocks -->
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to My Stylish Page</h1>
+            <p>This is a modern, responsive webpage.</p>
+        </div>
     </section>
 
     <section id="about">
-        <h2>About</h2>
-        <p>Explore our rich history, join our events, and connect with the divine.</p>
+        <div class="container">
+            <h2>About Us</h2>
+            <p>This is some information about the website.</p>
+        </div>
     </section>
 
-    <section id="services" class="section-bg">
-        <h2>Services</h2>
-        <p>List of services provided by the temple.</p>
-    </section>
+    <!-- Add more sections as needed -->
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Photos and videos of the temple.</p>
-    </section>
-
-    <section id="contact" class="section-bg">
-        <h2>Contact</h2>
-        <p>Contact information and address of the temple.</p>
-    </section>
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-        <img src="img1.jpg" style="width:100%">
- 
-    <footer>
-        <p>&copy; 2025 TempleSpiritHub. All rights reserved.</p>
-    </footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-<div class="slideshow-container">
-    <div class="mySlides fade">
-        <img src="img1.jpg" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-        <img src="img2.jpg" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-        <img src="img3.jpg" style="width:100%">
-    </div>
-</div>
-
- <div class="slideshow-container">
-    <div class="mySlides fade">
-        <img src="img1.jpg" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-        <img src="img2.jpg" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-        <img src="img3.jpg" style="width:100%">
-    </div>
-</div>
-
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
